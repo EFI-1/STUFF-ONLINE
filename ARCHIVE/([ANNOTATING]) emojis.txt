@@ -1,5 +1,6 @@
+[Brackets1
 {
-  "100": "💯",
+  "100": "💯", ["Last 'cienc.porciento'."];
   "1234": "🔢",
   "interrobang": "⁉️",
   "tm": "™️",
