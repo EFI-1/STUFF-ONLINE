@@ -18,7 +18,7 @@
   "umbrella_with_rain_drops": "☂️",
   "snowman": "☃️", ["Knocked a big Mexican one over in UT&T."]
   "comet": "☄️", ["'Comet' vs 'asteroid' (like an 'asteroid that wiped out the dinosaurs')?"<-["The B R E A D T H I E F guys would never be caught dead at a natural history museum. 'Those fanboys of catastrophic mushroom clouds and catastrophic asteroids'..."]]
-  "ballot_box_with_check": "☑️", [("It don't look like a ballot to me, Tommy.", Tommy PISTOLWHIPS HIM ACROSS THE BACK OF THE HEAD FOR THE Mexican BLEACHERS IN Venezuela, THE AUDIENCE [WHICH INCLUDED Chinese-AtlanticSIDE BLEACHERS (AWAY FROM THE PacificSIDE EROSION) WAS AMUSED THEN SOMEONE (BECAUSE THERE WERE JUST SO MANY HACKERS/CRIMINALS CONCENTRATED IN ONE PLACE) DIED (WHICH WAS EXPECTED IN SUCH A BIG GROUP OF HACKERS/"AGGRAVATED MURDERERS" [PEOPLE GUILTY OF AGGRAVATED MURDER[.2 026]])])]
+  "ballot_box_with_check": "☑️", [("It don't look like a ballot to me, Tommy.", Tommy PISTOLWHIPS HIM ACROSS THE BACK OF THE HEAD FOR THE Mexican BLEACHERS IN Venezuela, THE AUDIENCE [WHICH INCLUDED Chinese-AtlanticSIDE BLEACHERS (AWAY FROM THE PacificSIDE EROSION) WAS AMUSED THEN SOMEONE (BECAUSE THERE WERE JUST SO MANY HACKERS/CRIMINALS CONCENTRATED IN ONE PLACE) DIED (WHICH WAS EXPECTED IN SUCH A BIG GROUP OF HACKERS/"AGGRAVATED MURDERERS" [PEOPLE GUILTY OF AGGRAVATED MURDER[.1/2 026]])])]
   "umbrella": "☔️",
   "coffee": "☕️",
   "shamrock": "☘️",
