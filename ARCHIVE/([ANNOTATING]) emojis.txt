@@ -1,23 +1,24 @@
 [Brackets1
+✅
 {
   "100": "💯", ["Last 'cienc.porciento'."];
-  "1234": "🔢",
-  "interrobang": "⁉️",
-  "tm": "™️",
-  "information_source": "ℹ️",
-  "left_right_arrow": "↔️",
+  "1234": "🔢", [?, SOUNDTRACK: "A DAY FOR EVERY NUMBER (SONG)" (BY: The HiFi Project [BAND])];
+  "interrobang": "⁉️", ["Gay sex."]
+  "tm": "™️", ["'TRADEMARK'(?)"]
+  "information_source": "ℹ️", ["'✅'."]
+  "left_right_arrow": "↔️", ["DICKBUTT(?)", "ALSO A TRAFFIC SIGN WHEN IN YELLOW TO INDICATE A T-INTERSECTION (IS THAT CORRECT [VERIFY THAT STATEMENT])."]
   "arrow_up_down": "↕️",
   "arrow_upper_left": "↖️",
   "arrow_upper_right": "↗️",
   "arrow_lower_right": "↘️",
   "arrow_lower_left": "↙️",
-  "keyboard": "⌨️",
-  "sunny": "☀️",
-  "cloud": "☁️",
+  "keyboard": "⌨️", ["No typewriter zone, no chair zone. FML"]
+  "sunny": "☀️", ["Golden yellow (most of all).", "A neutrino gun (of sorts).", "Neutrino-star..."]
+  "cloud": "☁️", ["And cloud computing ''my boy'!'"], ["When this emojis is used as a Windows system icon, it represents an item that is currently not 'available offline', that is, in your cloud, not on your device's 'local storage'."]
   "umbrella_with_rain_drops": "☂️",
-  "snowman": "☃️",
-  "comet": "☄️",
-  "ballot_box_with_check": "☑️",
+  "snowman": "☃️", ["Knocked a big Mexican one over in UT&T."]
+  "comet": "☄️", ["'Comet' vs 'asteroid' (like an 'asteroid that wiped out the dinosaurs')?"<-["The B R E A D T H I E F guys would never be caught dead at a natural history museum. 'Those fanboys of catastrophic mushroom clouds and catastrophic asteroids'..."]]
+  "ballot_box_with_check": "☑️", [("It don't look like a ballot to me, Tommy.", Tommy PISTOLWHIPS HIM ACROSS THE BACK OF THE HEAD FOR THE Mexican BLEACHERS IN Venezuela, THE AUDIENCE [WHICH INCLUDED Chinese-AtlanticSIDE BLEACHERS (AWAY FROM THE PacificSIDE EROSION) WAS AMUSED THEN SOMEONE (BECAUSE THERE WERE JUST SO MANY HACKERS/CRIMINALS CONCENTRATED IN ONE PLACE) DIED (WHICH WAS EXPECTED IN SUCH A BIG GROUP OF HACKERS/"AGGRAVATED MURDERERS" [PEOPLE GUILTY OF AGGRAVATED MURDER[.2 026]])])]
   "umbrella": "☔️",
   "coffee": "☕️",
   "shamrock": "☘️",
