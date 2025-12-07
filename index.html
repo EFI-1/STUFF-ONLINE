@@ -42,31 +42,39 @@
 /*
 [PLACEHOLDER TEXT]; [PLACEHOLDER TEXT]; [PLACEHOLDER TEXT]; [PLACEHOLDER TEXT]; [PLACEHOLDER TEXT]; [PLACEHOLDER TEXT]; [PLACEHOLDER TEXT]; [PLACEHOLDER TEXT]; [PLACEHOLDER TEXT]; [PLACEHOLDER TEXT]; [PLACEHOLDER TEXT]; 
 */
+
 /* === RED BODYBUILDER EXT FAM OST GHOST / TOUGHGUY / FALLGUY CSS Style Elements === */
-  body {
-  color: darkcyan; /* default text color */
+body {
+  color: #646464; /* text color */
   font-family: 'Google Sans Code', sans-serif;
- text-align: left;
-  background: linear-gradient(to top right, darkmagenta, black);
+  text-align: left;
+  background: linear-gradient(to top right, darkmagenta, black); /* page background */
   margin: 0;
   padding: 0;
 }
-    
-/* Link styling */
-a {
-  color: purple;
-  text-decoration: none;
+
+/* Give text a permanent background color */
+p, h1, h2, h3, footer {
+  background-color: #d0e0e3; /* light cyan background behind text */
+  /* display: inline-block;      ensures background hugs the text */
+  padding: 2px 4px;          /* small padding for readability */
 }
 
+a {
+  color: #ffffff;
+  background-color: #c8e1e1; /* pale cyan */
+}
 a:hover {
-  color: white; /* highlight links on hover */
+  color: #000000;
+  background-color: #c8e1e1; /* pale cyan optional hover background */
 }
 
 /* Text selection highlight */
 ::selection {
-  background: white;
-  color: darkcyan;
+  background: #c8e1e1; /* pale cyan highlight */
+  color: #000000;      /* text is white when highlighted */
 }
+
 /*
 [PLACEHOLDER TEXT]; [PLACEHOLDER TEXT]; [PLACEHOLDER TEXT]; [PLACEHOLDER TEXT]; [PLACEHOLDER TEXT]; [PLACEHOLDER TEXT]; [PLACEHOLDER TEXT]; [PLACEHOLDER TEXT]; [PLACEHOLDER TEXT]; [PLACEHOLDER TEXT]; [PLACEHOLDER TEXT]; 
 */
@@ -218,9 +226,12 @@ a:hover {
     }
   </style>
 </head>
+<!-- -->
 <body>
+  <br>
+  <p>
+<!-- -->
   <h1>HTML BODY</h1>
-
   <a href="https://efi-1.github.io/STUFF-ONLINE/" target="_blank">
     [(YOU ARE HERE)] THIS index.html (hosted by Github Pages).
   </a>
@@ -238,19 +249,23 @@ a:hover {
   Emojis. csv
   <br>
   [He BARTALK Podcast PLACEHOLDER TEXT]; [He BARTALK Podcast PLACEHOLDER TEXT]; [He BARTALK Podcast PLACEHOLDER TEXT]; [He BARTALK Podcast PLACEHOLDER TEXT];
-
-  <p>This is a normal paragraph.</p>
-
-  <footer>
-    © 2025 My Website
-    <br>
-    HTML FOOTER SECTION/FOOTNOTES (NEWEST/TOPMOST): FOOTNOTE 2: [FOOTNOTE 2 TEXT]; FOOTNOTE 1: [FOOTNOTE 1 TEXT];
-  </footer>
-
+  </p>
   <br>
-  Example of: An Element With A Unique id...
-  <footer id="special-footer">
-    This is the footer with a unique ID.
-  </footer>
+<p>
+<!-- -->
+This is a normal paragraph.
+</p>
+<footer>
+<!-- -->
+2025 My Website
+<br>
+HTML FOOTER SECTION/FOOTNOTES (NEWEST/TOPMOST): FOOTNOTE 2: [FOOTNOTE 2 TEXT]; FOOTNOTE 1: [FOOTNOTE 1 TEXT];
+</footer>
+<br>
+<p>Example of: An Element With A Unique id...</p>
+<footer id="special-footer">
+<!-- -->
+This is the footer with a unique ID.
+</footer>
 </body>
 </html>
