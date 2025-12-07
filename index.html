@@ -1,135 +1,142 @@
-<!DOCTYPE html> <!-- 🧲🇺🇸 If you want to leave notes for yourself or collaborators, put comments inside the HTML (after the doctype). That way you stay standards‑compliant. -->
-<!--
-Commentary:
--->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--
-1
-/Commentary
--->
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>🧲🇺🇸 index.html</title>
-<!-- EFI-1 ONLINE BOOKMARKS -->
-<!-- Import Google Sans Code -->
-<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:wght@800&display=swap" rel="stylesheet">
-<style>
+  <meta charset="UTF-8">
+  <title>index.html</title>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:wght@800&display=swap" rel="stylesheet">
+  <style>
+    /* === RED BODYBUILDER EXT FAM OST GHOST / TOUGHGUY / FALLGUY === */
     body {
       color: #fff;
       font-family: 'Google Sans Code', sans-serif;
       text-align: left;
-      background: url('assets/default.jpg') no-repeat center center fixed;
+      background: #0a0a0a url('assets/default.jpg') no-repeat center center fixed;
       background-size: cover;
       margin: 0;
       padding: 0;
     }
+
     header {
-        font-size: 2.2em; margin-bottom: 20px; border-bottom: 2px solid #FFD700; padding-bottom: 10px; box-shadow: 0 2px 10px rgba(255, 215, 0, 0.4); text-align: center; /* centers the header text */
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      border-bottom: 3px solid #8B0000;
+      padding-bottom: 12px;
+      text-align: center;
+      color: #ff1c1c;
+      text-shadow: 3px 3px 6px #000;
+      box-shadow: 0 3px 12px rgba(139, 0, 0, 0.6);
     }
+
     .station-card {
-        background: linear-gradient(145deg, #1e1e1e, #2a2a2a); border: 2px solid #FFD700; border-radius: 15px; padding: 25px; margin: 25px auto; max-width: 400px; box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+      background: linear-gradient(145deg, #111, #1c1c1c);
+      border: 2px solid #8B0000;
+      border-radius: 15px;
+      padding: 25px;
+      margin: 25px auto;
+      max-width: 420px;
+      box-shadow: 0 0 25px rgba(139, 0, 0, 0.5);
     }
+
     iframe {
-        border: none; width: 100%; max-width: 320px; height: 360px; border-radius: 10px;
+      border: none;
+      width: 100%;
+      max-width: 340px;
+      height: 380px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(139, 0, 0, 0.7);
     }
+
     .counter-container {
-        margin-top: 20px;
+      margin-top: 30px;
+      font-size: 0.95em;
+      opacity: 0.95;
+      text-align: center;
     }
+
     .counter-container img {
-        display: block; margin: 8px auto; background: #000; padding: 6px; border-radius: 6px; border: 1px solid #FFD700; box-shadow: inset 0 0 8px #FFD700;
+      display: block;
+      margin: 10px auto;
+      background: #000;
+      padding: 8px;
+      border-radius: 8px;
+      border: 2px solid #ff1c1c;
+      box-shadow: inset 0 0 12px #8B0000;
     }
+
     footer {
-        margin-top: 40px; font-size: 0.9em; color: #FFD700; border-top: 2px solid #FFD700; padding-top: 10px; box-shadow: 0 -2px 10px rgba(255, 215, 0, 0.4);
+      margin-top: 50px;
+      font-size: 1em;
+      color: #ff1c1c;
+      border-top: 3px solid #8B0000;
+      padding-top: 12px;
+      text-align: center;
+      text-shadow: 2px 2px 5px #000;
+      box-shadow: 0 -3px 12px rgba(139, 0, 0, 0.6);
     }
+
     footer a {
-        color: #FFD700; text-decoration: none; font-weight: 600; /* semi-bold for links */
+      color: #ff1c1c;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
     }
+
     footer a:hover {
-        color: #fff176;
+      color: #ff4d4d;
     }
+
     h1 {
-        color: rgba(255, 117, 24, 0.25); /* faded orange text */ text-shadow: 2px 2px 4px #000;   /* shadow stays strong */ margin-bottom: 20px; opacity: 0.25; /* fade entire header (text + shadow) to 25% */ text-align: center; /* centers the header text */
+      color: #ff1c1c;
+      text-shadow: 4px 4px 8px #000;
+      margin-bottom: 25px;
+      text-align: center;
+      opacity: 0.9;
     }
-    iframe {
-        border: none; box-shadow: 0 0 20px rgba(0,0,0,0.6); border-radius: 12px;
+
+    #special-footer {
+      background-color: #111;
+      color: #ff1c1c;
+      text-align: center;
+      padding: 25px;
+      font-weight: bold;
+      border-top: 3px solid #8B0000;
+      box-shadow: inset 0 0 15px #8B0000;
     }
-    .counter-container {
-        margin-top: 30px; font-size: 0.9em; opacity: 0.9;
-    }
-    .counter-container img {
-        background: #000; padding: 6px; border-radius: 6px; border: 1px solid #ff7518; box-shadow: inset 0 0 8px #ff7518;
-    }
-footer {
-    margin-top: 40px; font-size: 0.9em; color: #ff7518; border-top: 2px solid #ff7518; padding-top: 10px; text-shadow: 1px 1px 3px #000;
-    }
-    footer a {
-        color: #ff7518; text-decoration: none; font-weight: bold;
-    }
-    footer a:hover {
-        color: #ffa64d; /* lighter orange on hover */
-    }
-    /* CSS targeting the element with id="special-footer" */ #special-footer {
-        background-color: #222; color: #ff7518; text-align: center; padding: 20px; font-weight: bold;
-    }
-</style>
-<head>
-  <meta charset="UTF-8">
-  <title>index.html</title>
+  </style>
 </head>
-<br>
 <body>
-<br>HTML BODY
-<br>
-<br><a href="https://efi-1.github.io/STUFF-ONLINE/" target="blank">[(YOU ARE HERE)] THIS index.html (hosted by Github Pages).</a>
-<br><a href="https://github.com/EFI-1/STUFF-ONLINE/" target="blank">[(YOU ARE HERE)] This Github Repo.</a>
-<br>Emojis ANNOTATIONS
-<br><a href="https://github.com/EFI-1/STUFF-ONLINE/blob/7d3f8bb9c3bfe591281d9f475f091b366caceb44/ARCHIVE/ANNOTATINGemojis.csv" target="blank">Emojislist [(WITH: ANNOTATIONS)]. csv</a>
-<br><br>Emojis. csv
-<br>[He BARTALK Podcast PLACEHOLDER TEXT]; [He BARTALK Podcast PLACEHOLDER TEXT]; [He BARTALK Podcast PLACEHOLDER TEXT]; [He BARTALK Podcast PLACEHOLDER TEXT];
-<!--
-[He BARTALK Podcast PLACEHOLDER TEXT]; [He BARTALK Podcast PLACEHOLDER TEXT]; [He BARTALK Podcast PLACEHOLDER TEXT]; [He BARTALK Podcast PLACEHOLDER TEXT]; [He BARTALK Podcast PLACEHOLDER TEXT]; [He BARTALK Podcast PLACEHOLDER TEXT]; [He BARTALK Podcast PLACEHOLDER TEXT]; [He BARTALK Podcast PLACEHOLDER TEXT]; [He BARTALK Podcast PLACEHOLDER TEXT]; [He BARTALK Podcast PLACEHOLDER TEXT]; [He BARTALK Podcast PLACEHOLDER TEXT]; [He BARTALK Podcast PLACEHOLDER TEXT]; [He BARTALK Podcast PLACEHOLDER TEXT]; [He BARTALK Podcast PLACEHOLDER TEXT]; [He BARTALK Podcast PLACEHOLDER TEXT]; [He BARTALK Podcast PLACEHOLDER TEXT]; [He BARTALK Podcast PLACEHOLDER TEXT]; [He BARTALK Podcast PLACEHOLDER TEXT]; [He BARTALK Podcast PLACEHOLDER TEXT]; [He BARTALK Podcast PLACEHOLDER TEXT]; [He BARTALK Podcast PLACEHOLDER TEXT]; [He BARTALK Podcast PLACEHOLDER TEXT]; [He BARTALK Podcast PLACEHOLDER TEXT]; [He BARTALK Podcast PLACEHOLDER TEXT]; [He BARTALK Podcast PLACEHOLDER TEXT]; [He BARTALK Podcast PLACEHOLDER TEXT]; [He BARTALK Podcast PLACEHOLDER TEXT]; [He BARTALK Podcast PLACEHOLDER TEXT]; [He BARTALK Podcast PLACEHOLDER TEXT]; [He BARTALK Podcast PLACEHOLDER TEXT]; [He BARTALK Podcast PLACEHOLDER TEXT]; [He BARTALK Podcast PLACEHOLDER TEXT]; [He BARTALK Podcast PLACEHOLDER TEXT]; [He BARTALK Podcast PLACEHOLDER TEXT]; [He BARTALK Podcast PLACEHOLDER TEXT]; [He BARTALK Podcast PLACEHOLDER TEXT]; [He BARTALK Podcast PLACEHOLDER TEXT]; [He BARTALK Podcast PLACEHOLDER TEXT]; [He BARTALK Podcast PLACEHOLDER TEXT]; 
--->
-<p>This is a normal paragraph.</p>
-<footer>
-<br>© 2025 My Website
-<br>HTML FOOTER SECTION/FOOTNOTES (NEWEST/TOPMOST): FOOTNOTE 2: [FOOTNOTE 2 TEXT]; FOOTNOTE 1: [FOOTNOTE 1 TEXT];
-<!-- Element with a unique ID -->
-</footer>
-<br>Example of: An Element With A Unique id...
-<footer id="special-footer">
-<br>This is the footer with a unique ID.
-</footer>
+  <h1>HTML BODY</h1>
+
+  <a href="https://efi-1.github.io/STUFF-ONLINE/" target="_blank">
+    [(YOU ARE HERE)] THIS index.html (hosted by Github Pages).
+  </a>
+  <br>
+  <a href="https://github.com/EFI-1/STUFF-ONLINE/" target="_blank">
+    [(YOU ARE HERE)] This Github Repo.
+  </a>
+  <br>
+  Emojis ANNOTATIONS
+  <br>
+  <a href="https://github.com/EFI-1/STUFF-ONLINE/blob/7d3f8bb9c3bfe591281d9f475f091b366caceb44/ARCHIVE/ANNOTATINGemojis.csv" target="_blank">
+    Emojislist [(WITH: ANNOTATIONS)]. csv
+  </a>
+  <br><br>
+  Emojis. csv
+  <br>
+  [He BARTALK Podcast PLACEHOLDER TEXT]; [He BARTALK Podcast PLACEHOLDER TEXT]; [He BARTALK Podcast PLACEHOLDER TEXT]; [He BARTALK Podcast PLACEHOLDER TEXT];
+
+  <p>This is a normal paragraph.</p>
+
+  <footer>
+    © 2025 My Website
+    <br>
+    HTML FOOTER SECTION/FOOTNOTES (NEWEST/TOPMOST): FOOTNOTE 2: [FOOTNOTE 2 TEXT]; FOOTNOTE 1: [FOOTNOTE 1 TEXT];
+  </footer>
+
+  <br>
+  Example of: An Element With A Unique id...
+  <footer id="special-footer">
+    This is the footer with a unique ID.
+  </footer>
 </body>
 </html>
