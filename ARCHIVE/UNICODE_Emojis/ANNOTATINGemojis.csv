@@ -1,7 +1,7 @@
 Number,Name,Code,Emoji,Hall of Fame,Comment
 """№""","""CLDR Short Name""","""Code""","""Browser""", /*,"[""Bracketed comments.""]"
 1,grinning face,U+1F600,😀,,"[""Just a standard happy face emoji. But even these good things can be hijacked by the terrorists...""]"
-2,grinning face with big eyes,U+1F603,😃,,[EMOJI]
+2,grinning face with big eyes,U+1F603,😃,,
 3,grinning face with smiling eyes,U+1F604,😄,,
 4,beaming face with smiling eyes,U+1F601,😁,,
 5,grinning squinting face,U+1F606,😆,,
@@ -1996,6 +1996,6 @@ country-flag,,,,,
 1915,flag: Zimbabwe,U+1F1FF U+1F1FC,🇿🇼,,
 subdivision-flag,,,,,
 №,CLDR Short Name,Code,Browser,,
-1916,flag: England,U+1F3F4 U+E0067 U+E0062 U+E0065 U+E006E U+E0067 U+E007F,"""U+E007F""",,
-1917,flag: Scotland,U+1F3F4 U+E0067 U+E0062 U+E0073 U+E0063 U+E0074 U+E007F,"""U+E007F""",,
-1918,flag: Wales,U+1F3F4 U+E0067 U+E0062 U+E0077 U+E006C U+E0073 U+E007F,"""U+E007F""",,
+1916,flag: England,U+1F3F4 U+E0067 U+E0062 U+E0065 U+E006E U+E0067 U+E007F,🏴󠁧󠁢󠁥󠁮󠁧󠁿,,
+1917,flag: Scotland,U+1F3F4 U+E0067 U+E0062 U+E0073 U+E0063 U+E0074 U+E007F,🏴󠁧󠁢󠁳󠁣󠁴󠁿,,
+1918,flag: Wales,U+1F3F4 U+E0067 U+E0062 U+E0077 U+E006C U+E0073 U+E007F,🏴󠁧󠁢󠁷󠁬󠁳󠁿,,
