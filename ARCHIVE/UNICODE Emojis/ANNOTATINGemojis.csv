@@ -1,7 +1,7 @@
 Number,Name,Code,Emoji,Hall of Fame,Comment
 """№""","""CLDR Short Name""","""Code""","""Browser""", /*,"[""Bracketed comments.""]"
 1,grinning face,U+1F600,😀,,"[""Just a standard happy face emoji. But even these good things can be hijacked by the terrorists...""]"
-2,grinning face with big eyes,U+1F603,😃,,
+2,grinning face with big eyes,U+1F603,😃,,[EMOJI]
 3,grinning face with smiling eyes,U+1F604,😄,,
 4,beaming face with smiling eyes,U+1F601,😁,,
 5,grinning squinting face,U+1F606,😆,,
