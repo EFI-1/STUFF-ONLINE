@@ -4,10 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portal Viewer</title>
+  <!-- ============================================================
+       LINK TO CSS
+       ------------------------------------------------------------
+       External stylesheet holds all portal/fog styling.
+       Keep CSS modular in assets/css/styles.css.
+  ============================================================ -->
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-  <!-- Single portal with PDF viewer -->
+  <!-- ============================================================
+       SINGLE PORTAL (PDF VIEWER)
+       ------------------------------------------------------------
+       Displays a PDF inside the dreamy portal window.
+       Resizable via CSS property "resize: both".
+  ============================================================ -->
   <div class="portal newest">
     <h1>Portal Viewer 📄</h1>
     <embed src="assets/docs/sample.pdf"
@@ -23,6 +34,12 @@
   <!-- Popup menu (hidden by default, toggled via JS) -->
   <div id="themeMenu" class="menu"></div>
 
+  <!-- ============================================================
+       LINK TO JAVASCRIPT
+       ------------------------------------------------------------
+       External script handles theme switching + keyboard controls.
+       Keep JS modular in assets/js/script.js.
+  ============================================================ -->
   <script src="assets/js/script.js"></script>
 </body>
 </html>
