@@ -1,3 +1,0 @@
-@echo off
-REM '([COMMENT]) Open the URL/webpage below in the default browser'
-start "" "https://[www.YourURLHERE.com]/"
