@@ -1,0 +1,17 @@
+.portal {
+  position: relative;
+  width: 800px;   /* default width */
+  height: 600px;  /* default height */
+  resize: both;   /* allow manual resizing */
+  overflow: auto; /* scrollbars if content exceeds size */
+}
+
+/* Red Lightbulb heading style */
+.portal h1.redlightbulb {
+  font-family: 'Google Sans Code', monospace;
+  font-size: 800px;
+  color: red;
+  background-color: black; /* highlight hugging text */
+  display: inline-block;   /* ensures highlight hugs text only */
+  padding: 0.2rem;
+}
