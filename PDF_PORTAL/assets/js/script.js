@@ -1,18 +1,22 @@
 /* ============================================================
    Dreamy Portal Theme Switcher (Keyboard Controls + Legend)
    ------------------------------------------------------------
+   THEMES AVAILABLE:
    - Press 1 → Dreamy ✨
    - Press 2 → Misty 🌫️
    - Press 3 → Cosmic 🌌
-   - Press 4 → Red Lightbulb 💡
+   - Press 4 → Red Lightbulb Awareness 💡
+   ------------------------------------------------------------
    Themes are applied by swapping CSS variables defined in :root.
    A floating legend shows the shortcuts.
+   Overlay feedback appears briefly when switching themes.
 =========================================================== */
 
 const root = document.documentElement;
 
 /* === Theme definitions ===
    Modular: add new themes here.
+   Red Lightbulb Awareness is emphasized with bold styling.
 =========================================================== */
 const themes = {
   dreamy: {
@@ -39,8 +43,8 @@ const themes = {
     '--heading-color': 'rgba(255,255,255,0.9)',
     '--heading-glow': 'rgba(0,200,255,0.5)'
   },
-  redlightbulb: {
-    '--bg-main': '#330000',
+  redlightbulbawareness: {
+    '--bg-main': 'rgb(1,0,0)',   // pure red background
     '--bg-fade': '#000000',
     '--fog1-color': 'rgba(255,0,0,0.08)',
     '--fog2-color': 'rgba(255,50,50,0.05)',
@@ -49,17 +53,37 @@ const themes = {
   }
 };
 
-/* === Apply a theme by name === */
+/* === Apply a theme by name ===
+   Loops through variables in the theme object and sets them.
+   Special handling: Red Lightbulb Awareness adds a CSS class
+   to portal headings for dramatic styling.
+=========================================================== */
 function applyTheme(themeName) {
   const theme = themes[themeName];
   if (!theme) return;
+
+  // Apply CSS variables
   for (const variable in theme) {
     root.style.setProperty(variable, theme[variable]);
   }
+
+  // Special emphasis for Red Lightbulb Awareness
+  const portals = document.querySelectorAll('.portal h1');
+  portals.forEach(h1 => {
+    if (themeName === 'redlightbulbawareness') {
+      h1.classList.add('redlightbulbawareness'); // add special class
+    } else {
+      h1.classList.remove('redlightbulbawareness'); // remove if not active
+    }
+  });
+
   console.log(`Applied theme: ${themeName}`);
 }
 
-/* === Keyboard shortcuts === */
+/* === Keyboard shortcuts ===
+   Listen for key presses and apply themes accordingly.
+   Overlay feedback shows emoji + name.
+=========================================================== */
 document.addEventListener('keydown', (event) => {
   switch (event.key) {
     case '1':
@@ -75,13 +99,15 @@ document.addEventListener('keydown', (event) => {
       showOverlay('🌌 Cosmic');
       break;
     case '4':
-      applyTheme('redlightbulb');
-      showOverlay('💡 Red Lightbulb');
+      applyTheme('redlightbulbawareness');
+      showOverlay('💡 Red Lightbulb Awareness');
       break;
   }
 });
 
-/* === Overlay feedback === */
+/* === Overlay feedback ===
+   Shows emoji + name briefly in the center when theme changes.
+=========================================================== */
 function showOverlay(label) {
   const overlay = document.createElement('div');
   overlay.textContent = label;
@@ -98,29 +124,4 @@ function showOverlay(label) {
   overlay.style.zIndex = '9999';
   document.body.appendChild(overlay);
 
-  setTimeout(() => overlay.remove(), 1000);
-}
-
-/* === Legend display ===
-   Responsive: shrinks font size if more themes are added.
-=========================================================== */
-function showLegend() {
-  const legend = document.getElementById('legend');
-  legend.style.position = 'fixed';
-  legend.style.bottom = '1rem';
-  legend.style.left = '1rem';
-  legend.style.color = '#fff';
-  legend.style.background = 'rgba(0,0,0,0.3)';
-  legend.style.padding = '0.5rem 1rem';
-  legend.style.borderRadius = '6px';
-  legend.style.textShadow = '0 0 6px rgba(255,255,255,0.5)';
-  legend.style.fontSize = '0.9rem'; // smaller font for more themes
-  legend.textContent = '1 ✨  2 🌫️  3 🌌  4 💡';
-}
-
-/* === Initialize on page load === */
-document.addEventListener('DOMContentLoaded', () => {
-  applyTheme('dreamy');
-  showOverlay('✨ Dreamy');
-  showLegend();
-});
+  setTimeout(() => overlay
