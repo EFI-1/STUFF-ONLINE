@@ -2,59 +2,21 @@ body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
   color: #fff;
-  background: linear-gradient(to top right, var(--bg-main) 85%, var(--bg-fade) 100%);
+
+  /* ============================================================
+     VIGNETTE BACKGROUND
+     ------------------------------------------------------------
+     Radial gradient centered, fading to black at corners.
+     Corners are ~50% black, center is lighter.
+  ============================================================ */
+  background: radial-gradient(
+    circle at center,
+    var(--bg-main) 70%,   /* main color in center */
+    rgba(0,0,0,0.5) 100%  /* corners fade to 50% black */
+  );
+
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-/* Portal styling (same as before) */
-.portal {
-  position: relative;
-  width: 800px;
-  height: 600px;
-  resize: both;
-  overflow: auto;
-  padding: 1rem;
-  border-radius: 16px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
-}
-
-/* ESC message styling */
-#escMessage {
-  position: fixed;
-  bottom: 1rem;
-  left: 1rem;
-  font-size: 0.9rem;
-  background: rgba(0,0,0,0.5);
-  padding: 0.4rem 0.8rem;
-  border-radius: 6px;
-  text-shadow: 0 0 6px rgba(255,255,255,0.5);
-}
-
-/* Popup menu styling */
-.menu {
-  position: fixed;
-  bottom: 3rem; /* above ESC message */
-  left: 1rem;
-  background: rgba(0,0,0,0.85);
-  color: #fff;
-  padding: 1rem;
-  border-radius: 8px;
-  display: none; /* hidden by default */
-  z-index: 10000;
-}
-.menu ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.menu li {
-  margin: 0.5rem 0;
-  cursor: pointer;
 }
