@@ -14,15 +14,34 @@
 
 const root = document.documentElement;
 
-/* Theme definitions */
+/* === Theme definitions ===
+   Modular: add new themes here.
+   Each theme sets CSS variables for background/fog/text.
+=========================================================== */
 const themes = {
-  dreamy: { '--bg-main': '#191932', '--bg-fade': '#000000' },
-  misty: { '--bg-main': '#2a2a2a', '--bg-fade': '#000000' },
-  cosmic: { '--bg-main': '#0b0033', '--bg-fade': '#000000' },
-  redlightbulbawareness: { '--bg-main': 'rgb(1,0,0)', '--bg-fade': '#000000' }
+  dreamy: {
+    '--bg-main': '#191932',
+    '--bg-fade': '#000000'
+  },
+  misty: {
+    '--bg-main': '#2a2a2a',
+    '--bg-fade': '#000000'
+  },
+  cosmic: {
+    '--bg-main': '#0b0033',
+    '--bg-fade': '#000000'
+  },
+  redlightbulbawareness: {
+    '--bg-main': 'rgb(1,0,0)',   // pure red background
+    '--bg-fade': '#000000'
+  }
 };
 
-/* Apply a theme */
+/* === Apply a theme by name ===
+   Loops through variables in the theme object and sets them.
+   Special handling: Red Lightbulb Awareness adds a CSS class
+   to portal headings for dramatic styling.
+=========================================================== */
 function applyTheme(themeName) {
   const theme = themes[themeName];
   if (!theme) return;
@@ -37,24 +56,42 @@ function applyTheme(themeName) {
   }
 }
 
-/* Build popup menu dynamically */
+/* === Build popup menu dynamically ===
+   Adds a label and emoji icons next to each theme name.
+=========================================================== */
 function buildMenu() {
   const menu = document.getElementById('themeMenu');
   const ul = document.createElement('ul');
+
+  // Add a label at the top of the menu
+  const label = document.createElement('div');
+  label.textContent = 'Select Theme';
+  menu.innerHTML = ''; // clear previous
+  menu.appendChild(label);
+
+  // Map theme names to emojis
+  const emojiMap = {
+    dreamy: '✨',
+    misty: '🌫️',
+    cosmic: '🌌',
+    redlightbulbawareness: '💡'
+  };
+
+  // Add each theme as a list item
   Object.keys(themes).forEach(name => {
     const li = document.createElement('li');
-    li.textContent = name;
+    li.textContent = `${emojiMap[name]} ${name}`;
     li.addEventListener('click', () => {
       applyTheme(name);
       menu.style.display = 'none';
     });
     ul.appendChild(li);
   });
-  menu.innerHTML = '';
+
   menu.appendChild(ul);
 }
 
-/* Toggle menu visibility */
+/* === Toggle menu visibility === */
 function toggleMenu() {
   const menu = document.getElementById('themeMenu');
   if (menu.style.display === 'block') {
@@ -65,7 +102,9 @@ function toggleMenu() {
   }
 }
 
-/* Keyboard shortcuts */
+/* === Keyboard shortcuts ===
+   1–4 apply themes directly, ESC toggles menu.
+=========================================================== */
 document.addEventListener('keydown', (event) => {
   switch (event.key) {
     case '1': applyTheme('dreamy'); break;
@@ -76,7 +115,7 @@ document.addEventListener('keydown', (event) => {
   }
 });
 
-/* Initialize */
+/* === Initialize on page load === */
 document.addEventListener('DOMContentLoaded', () => {
   applyTheme('dreamy'); // default theme
 });
