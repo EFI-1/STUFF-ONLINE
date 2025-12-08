@@ -1,9 +1,5 @@
 /* ============================================================
    GLOBAL CONFIGURATION VIA CSS VARIABLES
-   ------------------------------------------------------------
-   Centralized values for colors, opacities, blur, fog, etc.
-   Edit these variables to change the look without touching
-   the rest of the CSS.
 =========================================================== */
 :root {
   --bg-main: #191932;   /* default deep blue */
@@ -12,9 +8,6 @@
 
 /* ============================================================
    PAGE BACKGROUND WITH VIGNETTE
-   ------------------------------------------------------------
-   Radial gradient centered, fading to black at corners.
-   Corners are ~50% black, center is lighter.
 =========================================================== */
 body {
   margin: 0;
@@ -22,8 +15,8 @@ body {
   color: #fff;
   background: radial-gradient(
     circle at center,
-    var(--bg-main) 70%,   /* main color in center */
-    rgba(0,0,0,0.5) 100%  /* corners fade to 50% black */
+    var(--bg-main) 70%,
+    rgba(0,0,0,0.5) 100%
   );
   min-height: 100vh;
   display: flex;
@@ -33,15 +26,13 @@ body {
 
 /* ============================================================
    PORTAL CONTAINER
-   ------------------------------------------------------------
-   Resizable, blurred, glowing.
 =========================================================== */
 .portal {
   position: relative;
-  width: 800px;   /* default width */
-  height: 600px;  /* default height */
-  resize: both;   /* allow manual resizing */
-  overflow: auto; /* scrollbars if content exceeds size */
+  width: 800px;
+  height: 600px;
+  resize: both;
+  overflow: auto;
   padding: 1rem;
   border-radius: 16px;
   background: rgba(255, 255, 255, 0.05);
@@ -66,13 +57,13 @@ body {
 /* Popup menu styling */
 .menu {
   position: fixed;
-  bottom: 3rem; /* above ESC message */
+  bottom: 3rem;
   left: 1rem;
   background: rgba(0,0,0,0.85);
   color: #fff;
   padding: 1rem;
   border-radius: 8px;
-  display: none; /* hidden by default */
+  display: none;
   z-index: 10000;
 }
 .menu div {
@@ -94,9 +85,22 @@ body {
 /* Special Red Lightbulb Awareness heading style */
 .portal h1.redlightbulbawareness {
   font-family: 'Google Sans Code', monospace;
-  font-size: 800px;
+  font-size: 3rem;
   color: red;
   background-color: black;
   display: inline-block;
   padding: 0.2rem;
+}
+
+/* Special Hallways of Power heading style */
+.portal h1.hallwaysofpower {
+  font-family: 'Georgia', serif;
+  font-size: 3rem;
+  color: #333;
+  background: linear-gradient(90deg, gold, lightgray, gold);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+  padding: 0.5rem;
+  border-bottom: 4px solid gold;
 }
