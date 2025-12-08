@@ -1,17 +1,146 @@
+/* ============================================================
+   GLOBAL CONFIGURATION VIA CSS VARIABLES
+   ------------------------------------------------------------
+   Centralized values for colors, opacities, blur, fog, etc.
+   Edit these variables to change the look without touching
+   the rest of the CSS.
+=========================================================== */
+:root {
+  --bg-main: #191932;   /* default deep blue */
+  --bg-fade: #000000;   /* fade into black */
+
+  --portal-bg-opacity: 0.05;
+  --portal-border-opacity: 0.15;
+  --portal-blur: 8px;
+  --portal-glow-opacity: 0.15;
+
+  --fog1-color: rgba(255,255,255,0.08);
+  --fog1-size: 70%;
+  --fog1-speed: 60s;
+
+  --fog2-color: rgba(200,200,255,0.05);
+  --fog2-size: 80%;
+  --fog2-speed: 90s;
+
+  --heading-color: rgba(255,255,255,0.8);
+  --heading-glow: rgba(255,255,255,0.4);
+  --body-text: rgba(255,255,255,0.75);
+  --table-border: rgba(255,255,255,0.1);
+  --table-header-bg: rgba(255,255,255,0.08);
+}
+
+/* ============================================================
+   PAGE BACKGROUND
+=========================================================== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+  background: linear-gradient(
+    to top right,
+    var(--bg-main) 85%,
+    var(--bg-fade) 100%
+  );
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; /* stack portals vertically */
+  align-items: center;
+  justify-content: flex-start; /* newest portal topmost */
+  gap: 2rem; /* spacing between portals */
+  overflow: hidden;
+}
+
+/* ============================================================
+   PORTAL CONTAINER
+   ------------------------------------------------------------
+   Resizable, blurred, glowing.
+=========================================================== */
 .portal {
   position: relative;
   width: 800px;   /* default width */
   height: 600px;  /* default height */
   resize: both;   /* allow manual resizing */
   overflow: auto; /* scrollbars if content exceeds size */
+  padding: 1rem;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, var(--portal-bg-opacity));
+  border: 1px solid rgba(255, 255, 255, var(--portal-border-opacity));
+  backdrop-filter: blur(var(--portal-blur));
+  -webkit-backdrop-filter: blur(var(--portal-blur));
+  box-shadow: 0 0 20px rgba(255, 255, 255, var(--portal-glow-opacity));
 }
 
-/* Red Lightbulb heading style */
-.portal h1.redlightbulb {
+/* Fog overlays */
+.portal::before,
+.portal::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  pointer-events: none;
+}
+.portal::before {
+  background: radial-gradient(circle, var(--fog1-color) 0%, transparent var(--fog1-size));
+  animation: drift1 var(--fog1-speed) linear infinite;
+}
+.portal::after {
+  background: radial-gradient(circle, var(--fog2-color) 0%, transparent var(--fog2-size));
+  animation: drift2 var(--fog2-speed) linear infinite;
+}
+@keyframes drift1 {
+  from { transform: translate(0,0) rotate(0deg); }
+  to   { transform: translate(15%, -15%) rotate(360deg); }
+}
+@keyframes drift2 {
+  from { transform: translate(-10%, 10%) rotate(0deg); }
+  to   { transform: translate(10%, -10%) rotate(-360deg); }
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--heading-color);
+  text-shadow: 0 0 6px var(--heading-glow);
+}
+
+/* Special Red Lightbulb Awareness heading style */
+.portal h1.redlightbulbawareness {
   font-family: 'Google Sans Code', monospace;
   font-size: 800px;
   color: red;
-  background-color: black; /* highlight hugging text */
-  display: inline-block;   /* ensures highlight hugs text only */
+  background-color: black;
+  display: inline-block;
   padding: 0.2rem;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid var(--table-border);
+  padding: 0.5rem;
+  text-align: left;
+  color: var(--body-text);
+}
+th {
+  background: var(--table-header-bg);
+}
+
+/* Legend styling */
+#legend {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  color: #fff;
+  font-size: 0.85rem;
+  background: rgba(0,0,0,0.3);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-shadow: 0 0 6px rgba(255,255,255,0.5);
 }
