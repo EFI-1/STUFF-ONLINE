@@ -1,5 +1,10 @@
 # STUFF-ONLINE
 <br><br>
+<br>
+<br>
+[#squatwithin; GUNTYPES: "'It's only a gun', Outlaw."]
+<br>
+<br>
 2025-12 (MILESTONE ACCOMPLISHMENT): Emojis.csv loads the list of all current emojis in seconds.
 <br>
 <br>
