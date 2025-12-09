@@ -1,0 +1,98 @@
+# ============================================================
+# Copybox Utility: Drop timestamped .csv logs into all folders
+# ============================================================
+# PURPOSE:
+#   - Walk through a root directory and all subfolders.
+#   - In each folder, create or update a file named "log.csv".
+#   - Two CONTRASTED MODES are available:
+#       1. APPEND MODE   → Adds a new line each run (growing archive).
+#       2. OVERWRITE MODE → Replaces file contents each run (fresh snapshot).
+#
+#   *** IMPORTANT: These two modes are the MAIN CONTRAST in this script. ***
+#   - APPEND preserves history, building a living archive.
+#   - OVERWRITE discards history, keeping only the latest entry.
+#
+# ============================================================
+
+param(
+    # Root directory to start from.
+    # Default is set to C:\ as requested.
+    [string]$RootPath = "C:\",
+
+    # Mode switcher: APPEND vs OVERWRITE
+    [ValidateSet("APPEND","OVERWRITE")]
+    [string]$Mode = "APPEND"
+)
+
+# ------------------------------------------------------------
+# Function: Get-Timestamp
+# ------------------------------------------------------------
+# Returns the current date/time with millisecond precision.
+# Format: yyyy-MM-dd HH:mm:ss.fff
+# Example: 2025-12-08 22:21:45.123
+# ------------------------------------------------------------
+function Get-Timestamp {
+    return (Get-Date).ToString("yyyy-MM-dd HH:mm:ss.fff")
+}
+
+# ------------------------------------------------------------
+# *** NOTE TEXT SECTION ***
+# ------------------------------------------------------------
+# This is the ONE place where you can modify the note text.
+# Example:
+#   $NoteText = "created .csv log"
+#   $NoteText = "updated archive entry"
+#   $NoteText = "manual check-in"
+#
+# Every time you change $NoteText, the script will write it
+# alongside the current timestamp into each log.csv.
+# ------------------------------------------------------------
+$NoteText = "created .csv log"
+
+# ------------------------------------------------------------
+# MAIN LOOP
+# ------------------------------------------------------------
+# Walk through all folders and subfolders under $RootPath.
+# For each folder:
+#   - Build the full path to "log.csv".
+#   - Construct the line in required format:
+#       "timestamp, note,, <timestamp>, <note text>"
+#   - Depending on MODE:
+#       - APPEND: Add line to existing file (preserve history).
+#       - OVERWRITE: Replace file contents with only the new line.
+# ------------------------------------------------------------
+Get-ChildItem -Path $RootPath -Directory -Recurse | ForEach-Object {
+    $folder = $_.FullName
+    $csvFile = Join-Path $folder "log.csv"
+
+    # Build line in required format
+    $line = "timestamp, note,, {0}, {1}" -f (Get-Timestamp), $NoteText
+
+    if ($Mode -eq "APPEND") {
+        # ====================================================
+        # APPEND MODE
+        # ====================================================
+        # - Adds a new line each time script runs.
+        # - Preserves all previous entries in log.csv.
+        # - Creates a growing archive of timestamps + notes.
+        # ====================================================
+        Add-Content -Path $csvFile -Value $line -Encoding UTF8
+        Write-Host "APPENDED to $csvFile : $line"
+    }
+    elseif ($Mode -eq "OVERWRITE") {
+        # ====================================================
+        # OVERWRITE MODE
+        # ====================================================
+        # - Replaces file contents each time script runs.
+        # - Discards all previous entries in log.csv.
+        # - Keeps only the latest timestamp + note line.
+        # ====================================================
+        Set-Content -Path $csvFile -Value $line -Encoding UTF8
+        Write-Host "OVERWROTE $csvFile with : $line"
+    }
+}
+
+# ------------------------------------------------------------
+# END OF SCRIPT
+# ------------------------------------------------------------
+Write-Host "✅ Completed in $Mode mode for all folders under $RootPath"
