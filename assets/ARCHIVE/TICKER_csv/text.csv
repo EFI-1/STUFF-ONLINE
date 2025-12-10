@@ -1,22 +1,20 @@
-#bgcolor=rgb(25,25,25),#fontcolor=rgb(241,241,241),#highlight=rgb(25,25,50),#font=GoogleSansCodeExtraBold,#fontsize=12pt
-Headline,Source
-"December’s Cold Moon, the final supermoon of 2025, dazzled stargazers across the UK.","ABC News"
-"Stunning images of December’s Cold Moon captured worldwide, marking the year’s last full moon.","Space.com"
-"Farmers are earning income while restoring native forests through a blockchain‑powered app.","Global Issues"
-"Polarisation is weakening trust in institutions as peacebuilding meets digital democracy.","Global Issues"
-"A missile strike on Dnipro has killed four people amid the ongoing Russo‑Ukrainian war.","Wikipedia Current Events"
-"Sudanese Rapid Support Forces have seized Babanusa, intensifying the civil war.","Wikipedia Current Events"
-"A strong earthquake struck northern Japan as Australia announced new social media restrictions.","Daily Guardian"
-"President Trump pledged aid for farmers facing global supply disruptions.","Daily Guardian"
-"Major trials show GLP‑1 drugs fail to slow Alzheimer’s disease progression.","Science News"
-"Scientists suggest a volcanic eruption may have helped spread the Black Plague in Europe.","Science News"
-"UK inflation eased slightly in November, offering households modest relief.","BBC News"
-"Rail strikes continue across Britain, disrupting travel during the busy holiday season.","The Guardian"
-"Climate activists staged protests in London, demanding urgent action on emissions.","Reuters"
-"Record rainfall has caused flooding in northern England, prompting evacuations.","Sky News"
-"Global oil prices rose after OPEC announced production cuts.","Financial Times"
-"New AI regulations were unveiled in Brussels, aiming to balance innovation and safety.","Euronews"
-"England’s cricket team celebrated a decisive win in the Ashes series.","BBC Sport"
-"Health officials warned of rising flu cases as winter pressures mount on the NHS.","The Independent"
-"UK housing market slowed further, with prices dipping in several regions.","The Times"
-"Space agency ESA announced plans for a new lunar mission in 2026.","European Space Agency"
+<span class="headline">December’s Cold Moon dazzled stargazers across the UK.</span><span class="live-led">LIVE!</span>
+<span class="headline">Stunning images of December’s Cold Moon captured worldwide.</span><span class="live-led">LIVE!</span>
+<span class="headline">Farmers earn income while restoring native forests.</span><span class="live-led">LIVE!</span>
+<span class="headline">Polarisation weakens trust in institutions.</span><span class="live-led">LIVE!</span>
+<span class="headline">Missile strike on Dnipro kills four people.</span><span class="live-led">LIVE!</span>
+<span class="headline">Sudanese Rapid Support Forces seize Babanusa.</span><span class="live-led">LIVE!</span>
+<span class="headline">Strong earthquake strikes northern Japan.</span><span class="live-led">LIVE!</span>
+<span class="headline">President Trump pledges aid for farmers.</span><span class="live-led">LIVE!</span>
+<span class="headline">GLP‑1 drugs fail to slow Alzheimer’s progression.</span><span class="live-led">LIVE!</span>
+<span class="headline">Volcanic eruption may have spread the Black Plague.</span><span class="live-led">LIVE!</span>
+<span class="headline">UK inflation eases slightly in November.</span><span class="live-led">LIVE!</span>
+<span class="headline">Rail strikes disrupt Britain during holiday season.</span><span class="live-led">LIVE!</span>
+<span class="headline">Climate activists protest in London.</span><span class="live-led">LIVE!</span>
+<span class="headline">Record rainfall floods northern England.</span><span class="live-led">LIVE!</span>
+<span class="headline">Global oil prices rise after OPEC cuts.</span><span class="live-led">LIVE!</span>
+<span class="headline">New AI regulations unveiled in Brussels.</span><span class="live-led">LIVE!</span>
+<span class="headline">England wins decisive Ashes series match.</span><span class="live-led">LIVE!</span>
+<span class="headline">Flu cases rise as NHS faces winter pressure.</span><span class="live-led">LIVE!</span>
+<span class="headline">UK housing market slows further.</span><span class="live-led">LIVE!</span>
+<span class="headline">ESA announces lunar mission for 2026.</span><span class="live-led">LIVE!</span>
