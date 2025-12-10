@@ -1,1 +1,5 @@
-,,,,
+#bgcolor=rgb(25,25,25),#fontcolor=rgb(241,241,241),#highlight=rgb(25,25,50),#font="Google Sans Code Extra Bold",#fontsize=12pt
+ID,Headline,Status
+1,"Breaking News: Market hits record high",LIVE
+2,"Weather Update: Heavy rains expected",ALERT
+3,"Sports: Local team wins championship",LIVE
