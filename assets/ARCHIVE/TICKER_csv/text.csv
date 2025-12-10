@@ -1,5 +1,22 @@
-#bgcolor=rgb(25,25,25),#fontcolor=rgb(241,241,241),#highlight=rgb(25,25,50),#font="Google Sans Code Extra Bold",#fontsize=12pt
-ID,Headline,Status
-1,"Breaking News: Market hits record high",LIVE
-2,"Weather Update: Heavy rains expected",ALERT
-3,"Sports: Local team wins championship",LIVE
+#bgcolor=rgb(25,25,25),#fontcolor=rgb(241,241,241),#highlight=rgb(25,25,50),#font=GoogleSansCodeExtraBold,#fontsize=12pt
+Headline,Source
+"December’s Cold Moon, the final supermoon of 2025, dazzled stargazers across the UK.","ABC News"
+"Stunning images of December’s Cold Moon captured worldwide, marking the year’s last full moon.","Space.com"
+"Farmers are earning income while restoring native forests through a blockchain‑powered app.","Global Issues"
+"Polarisation is weakening trust in institutions as peacebuilding meets digital democracy.","Global Issues"
+"A missile strike on Dnipro has killed four people amid the ongoing Russo‑Ukrainian war.","Wikipedia Current Events"
+"Sudanese Rapid Support Forces have seized Babanusa, intensifying the civil war.","Wikipedia Current Events"
+"A strong earthquake struck northern Japan as Australia announced new social media restrictions.","Daily Guardian"
+"President Trump pledged aid for farmers facing global supply disruptions.","Daily Guardian"
+"Major trials show GLP‑1 drugs fail to slow Alzheimer’s disease progression.","Science News"
+"Scientists suggest a volcanic eruption may have helped spread the Black Plague in Europe.","Science News"
+"UK inflation eased slightly in November, offering households modest relief.","BBC News"
+"Rail strikes continue across Britain, disrupting travel during the busy holiday season.","The Guardian"
+"Climate activists staged protests in London, demanding urgent action on emissions.","Reuters"
+"Record rainfall has caused flooding in northern England, prompting evacuations.","Sky News"
+"Global oil prices rose after OPEC announced production cuts.","Financial Times"
+"New AI regulations were unveiled in Brussels, aiming to balance innovation and safety.","Euronews"
+"England’s cricket team celebrated a decisive win in the Ashes series.","BBC Sport"
+"Health officials warned of rising flu cases as winter pressures mount on the NHS.","The Independent"
+"UK housing market slowed further, with prices dipping in several regions.","The Times"
+"Space agency ESA announced plans for a new lunar mission in 2026.","European Space Agency"
